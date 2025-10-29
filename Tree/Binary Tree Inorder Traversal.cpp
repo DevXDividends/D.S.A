@@ -1,4 +1,4 @@
-// TC:O(h) SC:(h) 
+// TC:O(n) SC:(h) 
 /**
  * Definition for a binary tree node.
  * struct TreeNode {
