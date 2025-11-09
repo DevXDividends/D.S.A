@@ -1,4 +1,4 @@
-// TC:O(max(n, m)) SC:O(max(n, m))
+// TC:O(m + n) SC:O(max(n, m))
 /*
 class Node {
   public:
