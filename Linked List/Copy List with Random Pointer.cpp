@@ -36,7 +36,7 @@ public:
         return mpp[head];
     }
 };
-// optimal TC:O(3n) SC:O(n) 
+// optimal TC:O(n) SC:O(1) 
 /*
 // Definition for a Node.
 class Node {
