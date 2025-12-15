@@ -1,3 +1,4 @@
+// TC: O(log N) SC: O(log N)
 class Solution {
 public:
     int height(Node* node) {
