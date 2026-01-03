@@ -18,7 +18,7 @@ Welcome to my DSA journey! This repository is a comprehensive collection of data
 | :--- | :---: | :--- |
 | 🟢 Arrays | 142 | In Progress |
 | 🟡 Linked Lists | 94 | To Do |
-| 🔴 Recursion | 19 | To Do |
+| 🔴 Recursion | 19 |In Progress |
 | 🟣 Binary Search | 54 | To Do |
 | 🟠 Trees | 17| To Do |
 
@@ -40,7 +40,7 @@ The repository is organized by topic. Each folder contains the solution and a br
 
 
 🛠️ Tech Stack
-Primary Language: [C++
+Primary Language: [C++]
 Platform: LeetCode, GeeksForGeeks,HackerRank
 Version Control: Git & GitHub
 
