@@ -53,6 +53,13 @@ Version Control: Git & GitHub
 🤝 Contributing
 I am always open to better approaches! If you have a more optimized solution (better Time/Space complexity), feel free to:
 
+## 🔗 Connect with my Coding Journey
+
+[![LeetCode](https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black)](https://leetcode.com/u/Adityadengale/)
+[![GeeksforGeeks](https://img.shields.io/badge/-GeeksforGeeks-298D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/profile/adityaded6it)
+[![HackerRank](https://img.shields.io/badge/-HackerRank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white)](https://www.hackerrank.com/profile/adityadengale16)
+[![Codolio](https://img.shields.io/badge/-Codolio-6366f1?style=for-the-badge&logo=codeforces&logoColor=white)](https://codolio.com/profile/ADITYA*)
+
 Fork the repo.
 Create a new branch.
 Submit a Pull Request.
