@@ -1,7 +1,7 @@
 # 🚀 Data Structures & Algorithms (D.S.A)
 
 ![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
-![Language](https://img.shields.io/badge/Language-Java%20%2F%20C++%20%2F%20Python-orange)
+![Language](https://img.shields.io/badge/Language-C++-00599C?logo=c%2B%2B&logoColor=white)
 ![LeetCode](https://img.shields.io/badge/Style-LeetCode-blue)
 
 Welcome to my DSA journey! This repository is a comprehensive collection of data structures and algorithms problems I've solved across various platforms like LeetCode, GFG, and CodeStudio.
@@ -18,7 +18,7 @@ Welcome to my DSA journey! This repository is a comprehensive collection of data
 | :--- | :---: | :--- |
 | 🟢 Arrays | 142 | In Progress |
 | 🟡 Linked Lists | 94 | To Do |
-| 🔴 Dynamic Programming | 0 | To Do |
+| 🔴 Recursion | 19 | To Do |
 | 🟣 Binary Search | 54 | To Do |
 | 🟠 Trees | 17| To Do |
 
@@ -34,16 +34,14 @@ The repository is organized by topic. Each folder contains the solution and a br
 │   └── MaxSubarray.java
 ├── 02-LinkedList
 │   └── ReverseList.cpp
-├── 03-Searching-Sorting
+├── 03-Binary Search
 ├── 04-Recursion
 └── 05-Trees
 
 
 🛠️ Tech Stack
-Primary Language: [C++]
-
-Platform: LeetCode, GeeksForGeeks,hackerrankk
-
+Primary Language: [C++
+Platform: LeetCode, GeeksForGeeks,HackerRank
 Version Control: Git & GitHub
 
 📈 Goals for 2026
