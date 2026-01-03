@@ -26,7 +26,7 @@ Welcome to my DSA journey! This repository is a comprehensive collection of data
 ---
 
 ## 📂 Repository Structure
-The repository is organized by topic. Each folder contains the solution and a brief explanation of the approach.
+The repository is organized by topic. Each folder contains the solution and the approach.
 
 ```text
 .
