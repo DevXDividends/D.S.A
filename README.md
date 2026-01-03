@@ -58,12 +58,20 @@ Fork the repo.
 Create a new branch.
 Submit a Pull Request.
 
-'''
+---
 
 ## 🔗 Connect with my Coding Journey
 
-[![LeetCode](https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black)](https://leetcode.com/u/Adityadengale/)
-[![GeeksforGeeks](https://img.shields.io/badge/-GeeksforGeeks-298D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white)](https://www.geeksforgeeks.org/profile/adityaded6it)
-[![HackerRank](https://img.shields.io/badge/-HackerRank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white)](https://www.hackerrank.com/profile/adityadengale16)
-[![Codolio](https://img.shields.io/badge/-Codolio-6366f1?style=for-the-badge&logo=codeforces&logoColor=white)](https://codolio.com/profile/ADITYA*)
-Give a ⭐ if this repo helped you!
+<p align="left">
+<a href="https://leetcode.com/u/Adityadengale/"><img src="https://img.shields.io/badge/-LeetCode-FFA116?style=for-the-badge&logo=LeetCode&logoColor=black" alt="LeetCode"></a>
+<a href="https://www.geeksforgeeks.org/profile/adityaded6it"><img src="https://img.shields.io/badge/-GeeksforGeeks-298D46?style=for-the-badge&logo=geeksforgeeks&logoColor=white" alt="GeeksforGeeks"></a>
+<a href="https://www.hackerrank.com/profile/adityadengale16"><img src="https://img.shields.io/badge/-HackerRank-2EC866?style=for-the-badge&logo=HackerRank&logoColor=white" alt="HackerRank"></a>
+<a href="https://codolio.com/profile/ADITYA*"><img src="https://img.shields.io/badge/-Codolio-6366f1?style=for-the-badge&logo=codeforces&logoColor=white" alt="Codolio"></a>
+</p>
+
+---
+
+<p align="center">
+  <b>Give a ⭐ if this repo helped you!</b>
+</p>
+
