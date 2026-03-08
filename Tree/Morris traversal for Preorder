@@ -1,0 +1,31 @@
+// TC:O(n) SC:O(1)
+class Solution {
+  public:
+    vector<int> preOrder(Node* root) {
+        vector<int> preorder;
+        Node* curr = root;
+        while(curr!=nullptr){
+            if(!curr->left){
+                preorder.emplace_back(curr->data);
+                curr=curr->right;
+            }else{
+                //find the right most guy and point it to curr
+                Node* trav = curr->left;
+                while(trav->right && trav->right!=curr)
+                    trav = trav->right;
+                if(trav->right == nullptr){
+                    trav->right=curr;
+                    preorder.emplace_back(curr->data);
+                    curr=curr->left;
+
+                }else{
+                    trav->right=nullptr;
+                    curr=curr->right;
+                }
+            }
+            
+        }
+        return preorder;
+
+    }
+};
