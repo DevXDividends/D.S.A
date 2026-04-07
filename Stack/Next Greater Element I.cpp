@@ -19,3 +19,28 @@ public:
         return nge;
     }
 };
+
+// approach 2 TC:O(n) SC:O(n)
+class Solution {
+  public:
+    vector<int> nextLargerElement(vector<int>& arr) {
+        // code here
+        int n=arr.size();
+        stack<int> stk;
+        vector<int> ans(n);
+        
+        for(int i=n-1;i>=0;i--){
+            
+            while(!stk.empty() && arr[i]>=stk.top())
+                stk.pop();
+            
+            if(stk.empty())
+                 ans[i] = -1;
+            else
+                ans[i] = stk.top();
+            
+            stk.push(arr[i]);
+        }
+        return ans;
+    }
+};
