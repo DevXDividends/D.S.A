@@ -43,3 +43,97 @@ public:
         return sum;
     }
 };
+// optimal TC:O(n) SC:O(n) 
+class Solution {
+public:
+    long long sumOfMinimums(vector<int>& nums) {
+
+        int n = nums.size();
+
+        vector<long long> left(n), right(n);
+        stack<int> stk;
+
+        // Previous Smaller
+        for (int i = 0; i < n; i++) {
+
+            while (!stk.empty() && nums[stk.top()] > nums[i])
+                stk.pop();
+
+            left[i] = stk.empty() ? (i + 1) : (i - stk.top());
+
+            stk.push(i);
+        }
+
+        while (!stk.empty())
+            stk.pop();
+
+        // Next Smaller
+        for (int i = n - 1; i >= 0; i--) {
+
+            while (!stk.empty() && nums[stk.top()] >= nums[i])
+                stk.pop();
+
+            right[i] = stk.empty() ? (n - i) : (stk.top() - i);
+
+            stk.push(i);
+        }
+
+        long long total = 0;
+
+        for (int i = 0; i < n; i++) {
+            total += (long long)nums[i] * left[i] * right[i];
+        }
+
+        return total;
+    }
+
+    long long sumOfMaximums(vector<int>& nums) {
+
+        int n = nums.size();
+
+        vector<long long> left(n), right(n);
+        stack<int> stk;
+
+        // Previous Greater
+        for (int i = 0; i < n; i++) {
+
+            while (!stk.empty() && nums[stk.top()] < nums[i])
+                stk.pop();
+
+            left[i] = stk.empty() ? (i + 1) : (i - stk.top());
+
+            stk.push(i);
+        }
+
+        while (!stk.empty())
+            stk.pop();
+
+        // Next Greater
+        for (int i = n - 1; i >= 0; i--) {
+
+            while (!stk.empty() && nums[stk.top()] <= nums[i])
+                stk.pop();
+
+            right[i] = stk.empty() ? (n - i) : (stk.top() - i);
+
+            stk.push(i);
+        }
+
+        long long total = 0;
+
+        for (int i = 0; i < n; i++) {
+            total += (long long)nums[i] * left[i] * right[i];
+        }
+
+        return total;
+    }
+
+    long long subArrayRanges(vector<int>& nums) {
+
+        long long maxSum = sumOfMaximums(nums);
+
+        long long minSum = sumOfMinimums(nums);
+
+        return maxSum - minSum;
+    }
+};
