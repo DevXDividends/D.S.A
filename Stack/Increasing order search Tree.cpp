@@ -1,14 +1,4 @@
-/**
- * Definition for a binary tree node.
- * struct TreeNode {
- *     int val;
- *     TreeNode *left;
- *     TreeNode *right;
- *     TreeNode() : val(0), left(nullptr), right(nullptr) {}
- *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
- *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
- * };
- */
+// approach 1
 class Solution {
 public:
 void inorder(TreeNode* root,stack<TreeNode*>&stk){
@@ -32,5 +22,26 @@ void inorder(TreeNode* root,stack<TreeNode*>&stk){
            
        }
        return node-> right;
+    }
+};
+// approach 2
+
+class Solution {
+    TreeNode* curr;
+public:
+    void inorder(TreeNode* root) {
+        if (!root)
+            return;
+        inorder(root->left);
+        root->left = nullptr;
+        curr->right = root;
+        curr = root;
+        inorder(root->right);
+    }
+    TreeNode* increasingBST(TreeNode* root) {
+        TreeNode* dummy = new TreeNode(-1);
+        curr = dummy;
+        inorder(root);
+        return dummy->right;
     }
 };
