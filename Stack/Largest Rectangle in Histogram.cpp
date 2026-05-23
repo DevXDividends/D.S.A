@@ -1,5 +1,5 @@
 // brute TC:O(n^2) SC:O(n) 
-class Solution {
+class Solution { 
 public:
     int largestRectangleArea(vector<int>& heights) {
         int maxArea = 0;
