@@ -24,3 +24,43 @@ public:
         return maxArea;
     }
 };
+
+/// better TC:O(3n) SC:O(2n)
+class Solution {
+public:
+    void pse(vector<int>& arr, vector<int>& pse) {
+        stack<int> stk;
+        for (int i = 0; i < arr.size(); i++) {
+            while (!stk.empty() && arr[stk.top()] >= arr[i])
+                stk.pop();
+            pse[i] = stk.empty() ? -1 : stk.top();
+            stk.push(i);
+        }
+    }
+    void nse(vector<int>& arr, vector<int>& pse) {
+        stack<int> stk;
+        for (int i = arr.size() - 1; i >= 0; i--) {
+            while (!stk.empty() && arr[stk.top()] >= arr[i])
+                stk.pop();
+            pse[i] = stk.empty() ? arr.size() : stk.top();
+            stk.push(i);
+        }
+    }
+    int largestRectangleArea(vector<int>& heights) {
+        if (heights.empty())
+            return -1;
+        int n = heights.size();
+        int maxArea = 0;
+        vector<int> psea(n);
+        vector<int> nsea(n);
+        pse(heights, psea);
+        nse(heights, nsea);
+
+        for (int i = 0; i < n; i++) {
+            int left = psea[i];
+            int right = nsea[i];
+            maxArea = max(maxArea, heights[i] * (right - left - 1));
+        }
+        return maxArea;
+    }
+};
