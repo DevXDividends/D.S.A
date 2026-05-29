@@ -25,7 +25,15 @@ public:
         return cnt;
     }
 };
-// optimised TC:O(n) SC:O(n)
+/* optimised 
+Worst-case per next() call: O(n)
+
+Amortized per next() call: O(1)
+
+Total for n calls: O(n)
+
+Space: O(n)
+*/
 class StockSpanner {
     stack<pair<int, int>> stk;
 
