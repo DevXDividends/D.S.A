@@ -45,17 +45,15 @@ public:
     }
     vector<int> findRightInterval(vector<vector<int>>& intervals) {
         int n = intervals.size();
-        vector<pair<int, int>> start, end;
+        vector<pair<int, int>> start;
         vector<int> ans(n, -1);
         for (int i = 0; i < n; i++)
             start.push_back({intervals[i][0], i}); // O(n)
-        for (int i = 0; i < n; i++)
-            end.push_back({intervals[i][1], i}); // O(n)
-        sort(start.begin(), start.end());        // O(n log n)
-        sort(end.begin(), end.end());            // O(n log n)
+
+        sort(start.begin(), start.end()); // O(n log n)
 
         for (int i = 0; i < n; i++) { // overall O(log n)
-            ans[end[i].second] = LowerB(start, end[i].first);
+            ans[i] = LowerB(start, intervals[i][1]);
         }
         return ans;
     }
