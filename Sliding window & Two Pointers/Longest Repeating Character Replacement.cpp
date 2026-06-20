@@ -44,3 +44,27 @@ public:
         return maxSub;
     }
 };
+// same with using a 26 length array slightly faster
+class Solution {
+public:
+    int characterReplacement(string s, int k) {
+        int n = s.length();
+        int maxSub = 0;
+        int maxLen = 0;
+        vector<int> arr(26, 0);
+        int l = 0, r = 0;
+        while (r < n) {
+            arr[s[r] - 'A']++;
+            maxLen = max(maxLen, arr[s[r] - 'A']);
+            int charToReplace = (r - l + 1) - maxLen;
+            if (charToReplace > k) {
+                arr[s[l] - 'A']--;
+                l++;
+            }
+            if (charToReplace <= k)
+                maxSub = max(maxSub, r - l + 1);
+            r++;
+        }
+        return maxSub;
+    }
+};
