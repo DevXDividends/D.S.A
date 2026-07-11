@@ -13,7 +13,7 @@
 
 ![Maintained](https://img.shields.io/badge/Maintained-yes-green?style=flat-square)
 ![Language](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
-![Problems](https://img.shields.io/badge/Problems_Solved-326+-orange?style=flat-square)
+![Problems](https://img.shields.io/badge/Problems_Solved-200+-orange?style=flat-square)
 ![Platform](https://img.shields.io/badge/LeetCode-FFA116?style=flat-square&logo=leetcode&logoColor=black)
 
 </div>
@@ -33,12 +33,17 @@
 
 | Topic | Solved | Status |
 |:---|:---:|:---|
-| 🟢 Arrays | 142 | 🔄 In Progress |
-| 🟡 Linked Lists | 94 | 📋 To Do |
-| 🔴 Recursion | 19 | 🔄 In Progress |
-| 🟣 Binary Search | 54 | 📋 To Do |
-| 🟠 Trees | 17 | 📋 To Do |
-| **Total** | **326** | |
+| 🟣 Binary Search | 30 | ✅ Active |
+| 🔵 Linked List | 29 | ✅ Active |
+| 🟡 Memoization | 10 | 🔄 In Progress |
+| 🔴 Recursion | 14 | ✅ Active |
+| 🟠 Sliding Window & Two Pointers | 19 | ✅ Active |
+| 🟤 Stack | 24 | ✅ Active |
+| 🟢 Strings | 8 | 🔄 In Progress |
+| 🌳 Tree | 38 | 🔄 In Progress  |
+| 🔹 Two Pointer | 4 | 🔄 In Progress  |
+| 🟩 Arrays | 13 | 🔄 In Progress |
+| **Total** | **200+** | |
 
 > Progress updates as new solutions are pushed.
 
@@ -49,27 +54,19 @@
 ```
 DSA/
 │
-├── 01-Arrays/
-│   ├── TwoSum.cpp
-│   ├── MaxSubarray.cpp
-│   └── ...
-│
-├── 02-LinkedList/
-│   ├── ReverseList.cpp
-│   └── ...
-│
-├── 03-BinarySearch/
-│   └── ...
-│
-├── 04-Recursion/
-│   └── ...
-│
-└── 05-Trees/
-    └── ...
+├── Arrays/
+├── Binary Search/
+├── Linked List/
+├── Memoization/
+├── Recursion/
+├── Sliding Window & Two Pointers/
+├── Stack/
+├── Strings/
+├── Tree/
+└── Two Pointer/
 ```
 
 Each solution file includes:
-- ✅ Problem statement (link)
 - ✅ Approach & intuition
 - ✅ Time & Space complexity
 
