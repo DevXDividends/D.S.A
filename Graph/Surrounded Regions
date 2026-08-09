@@ -1,0 +1,48 @@
+// TC:O(N x M) SC:O(N x M)
+class Solution {
+private:
+    int delrow[4] = {-1, 0, 1, 0};
+    int delcol[4] = {0, 1, 0, -1};
+
+public:
+    void dfs(int row, int col, vector<vector<bool>>& vis,
+             vector<vector<char>>& grid) {
+        vis[row][col] = true;
+        for (int i = 0; i < 4; i++) {
+            int n = grid.size();
+            int m = grid[0].size();
+            int nrow = row + delrow[i];
+            int ncol = col + delcol[i];
+            if (nrow >= 0 && nrow < n && ncol >= 0 && ncol < m &&
+                !vis[nrow][ncol] && grid[nrow][ncol] != 'X')
+                dfs(nrow, ncol, vis, grid);
+        }
+    }
+    void solve(vector<vector<char>>& grid) {
+        int row = grid.size();
+        int col = grid[0].size();
+
+        vector<vector<bool>> vis(row, vector<bool>(col, false));
+
+        for (int i = 0; i < col; i++) {
+            if (grid[0][i] == 'O' && !vis[0][i])
+                dfs(0, i, vis, grid);
+
+            if (grid[row - 1][i] == 'O' && !vis[row - 1][i])
+                dfs(row - 1, i, vis, grid);
+        }
+        for (int i = 0; i < row; i++) {
+
+            if (grid[i][0] == 'O' && !vis[i][0])
+                dfs(i, 0, vis, grid);
+            if (grid[i][col - 1] == 'O' && !vis[i][col - 1])
+                dfs(i, col - 1, vis, grid);
+        }
+        for (int r = 0; r < row; r++) {
+            for (int c = 0; c < col; c++) {
+                if (!vis[r][c] && grid[r][c] == 'O')
+                    grid[r][c] = 'X';
+            }
+        }
+    }
+};
