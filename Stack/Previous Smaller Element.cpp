@@ -17,3 +17,18 @@ class Solution {
     }
 };
 // optimal approach TC:O(2n) SC:O(n) 
+// Monotonic stack — TC:O(n) SC:O(n)
+class Solution {
+  public:
+    vector<int> prevSmaller(vector<int>& arr) {
+        int n = arr.size();
+        vector<int> ans(n);
+        stack<int> stk;
+        for (int i = 0; i < n; i++) {
+            while (!stk.empty() && stk.top() >= arr[i]) stk.pop();
+            ans[i] = stk.empty() ? -1 : stk.top();
+            stk.push(arr[i]);
+        }
+        return ans;
+    }
+};
